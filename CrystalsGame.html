@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>House Cup Game</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- cup with number to match -->
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-2">
+        <div class="text-center">
+          <!-- <img class="houseCup" src="assets/images/HouseCup.jpg"> -->
+          <h1 class="houseCup"> <span id="number-to-guess"></span></h1>
+        </div>
+      </div>
+      <div class="col-md-5"></div>
+    </div>
+
+    <!-- record user guessed total here -->
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="text-center">
+          <h1 class="screenNotes"> Your total so far is <span id="userGuessTotal"></span></h1>
+        </div>
+        <!-- wins and losses tracked here -->
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="text-center">
+              <h1 class="screenNotes">Wins: <span id="wins"></span></h1>
+            </div>
+            <div class="row">
+
+              <div class="col-md-12">
+                <div class="text-center">
+                  <h1 class="screenNotes">Losses: <span id="losses"></span></h1>
+                </div>
+                <!-- clickable house crests that will be added to the user number -->
+                <div class=" row">
+                  <div class="col-md-3">
+                    <div class="text-center">
+                      <img class="houseCrest" id="gryffindor" src="assets/images/Gryffindor.PNG">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="text-center">
+                      <img class="houseCrest" id="huffelpuff" src="assets/images/Huffelpuff.PNG">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="text-center">
+                      <img class="houseCrest" id="ravenclaw" src="assets/images/Ravenclaw.PNG">
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="text-center">
+                      <img class="houseCrest" id="slytherin" src="assets/images/Slytherin.PNG">
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div id="crystals">
+                </div>
+              </div>
+              <script type="text/javascript"
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

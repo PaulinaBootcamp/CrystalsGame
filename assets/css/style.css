@@ -1,0 +1,22 @@
+.container {
+    margin-top: 30px;
+}
+
+.houseCup {
+    background-image: url(../images/HouseCup.jpg);
+    background-position: center;
+    height: 315px;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    color: goldenrod;
+    font-size: 50px;
+}
+
+.houseCrest {
+    height: 175px;
+}
+
+.screenNotes {
+    color: goldenrod;
+    font-size: 30px;
+}
