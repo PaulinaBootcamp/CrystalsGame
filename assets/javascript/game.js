@@ -44,6 +44,10 @@ $(".houseCrest").on("click", function () {
         document.getElementById("losses").innerHTML = (losses);
         console.log(targetNumber)
         console.log(counter)
+        counter = 0;
+        document.getElementById("userGuessTotal").innerHTML = (counter);
+        var targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+        $("#number-to-guess").text(targetNumber);
     }
 
     else if (counter >= targetNumber) {
@@ -53,6 +57,8 @@ $(".houseCrest").on("click", function () {
         document.getElementById("losses").innerHTML = (losses);
         console.log(targetNumber)
         console.log(counter)
+        counter = 0;
+        document.getElementById("userGuessTotal").innerHTML = (counter);
     }
 
 });
