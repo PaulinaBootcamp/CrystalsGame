@@ -14,16 +14,18 @@ document.getElementById("userGuessTotal").innerHTML = (counter);
 
 
 //assign unique number from 1-12 for each of the houses
-var gryffindor = Math.floor(Math.random() * (12 - 1 + 1)) + 1;;
-var hufflepuff = Math.floor(Math.random() * (12 - 1 + 1)) + 1;;
-var ravenclaw = Math.floor(Math.random() * (12 - 1 + 1)) + 1;;
-var slytherin = Math.floor(Math.random() * (12 - 1 + 1)) + 1;;
 
+
+var gryffindor = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+var hufflepuff = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+var ravenclaw = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+var slytherin = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
 
 $("#gryffindor").attr("data-number", gryffindor);
 $("#hufflepuff").attr("data-number", hufflepuff);
 $("#ravenclaw").attr("data-number", ravenclaw);
 $("#slytherin").attr("data-number", slytherin);
+console.log(gryffindor, hufflepuff, ravenclaw, slytherin)
 $(".houseCrest").on("click", function () {
 
     var clickValue = ($(this).attr("data-number"));
@@ -40,6 +42,7 @@ $(".houseCrest").on("click", function () {
     if (counter === targetNumber) {
 
         wins++;
+
         document.getElementById("wins").innerHTML = (wins);
         document.getElementById("losses").innerHTML = (losses);
         console.log(targetNumber)
@@ -51,7 +54,6 @@ $(".houseCrest").on("click", function () {
     }
 
     else if (counter >= targetNumber) {
-
         losses++;
         document.getElementById("wins").innerHTML = (wins);
         document.getElementById("losses").innerHTML = (losses);
